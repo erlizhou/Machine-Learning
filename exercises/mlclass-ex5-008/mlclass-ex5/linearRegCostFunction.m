@@ -24,8 +24,8 @@ grad = zeros(size(theta));
 regTheta = theta(2:end);
 
 Herr = (X * theta) - y;
-nonreg = (1/(2*m)) * sum(Herr.^2);
-reg = (lambda / (2*m)) * (regTheta' * regTheta);
+nonreg = (1/(2 * m)) * sum(Herr.^2);
+reg = (lambda / (2 * m)) * (regTheta' * regTheta);
 
 J = nonreg + reg;
 

@@ -25,7 +25,7 @@ grad = zeros(size(theta));
 thetaFiltered = [0; theta(2:end)];
 
 % J is the the non-regularized cost plus regularization
-J = J + ((lambda / (2*m)) * (thetaFiltered' * thetaFiltered));
+J = J + ((lambda / (2 * m)) * (thetaFiltered' * thetaFiltered));
 
 % grad is the non-regularized cost plus regularization.
 grad = grad + ((lambda / m) * thetaFiltered);

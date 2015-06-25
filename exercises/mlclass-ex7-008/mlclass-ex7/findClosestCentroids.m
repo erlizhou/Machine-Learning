@@ -22,10 +22,10 @@ idx = zeros(size(X,1), 1);
 %
 
 for i = 1:length(X)
-	deltas = zeros(K,1);
-	x = X(i,:);
+	deltas = zeros(K, 1);
+	x = X(i, :);
 	for j = 1:K
-		k = centroids(j,:);
+		k = centroids(j, :);
 		delta = x - k;
 		deltas(j) = delta * delta';
 		%fprintf(['delta for X(%d) & centroid(%d) : %f\n'], i, j, deltas(j));

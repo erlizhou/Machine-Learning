@@ -21,7 +21,7 @@ W = zeros(L_out, 1 + L_in);
 
 epsilon = .12;
 
-W = rand(L_out, 1+L_in) * 2 * epsilon - epsilon;
+W = rand(L_out, 1 + L_in) * 2 * epsilon - epsilon;
 
 
 

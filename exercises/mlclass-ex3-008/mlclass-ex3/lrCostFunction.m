@@ -39,13 +39,13 @@ grad = zeros(size(theta));
 h = sigmoid(X * theta);
 thetaFiltered = [0; theta(2:end)];
 
-costPositive = -y' * log(h);
+costPositive = - y' * log(h);
 costNegative =  (1 - y') * log(1 - h);
-reg = (lambda / (2*m)) * (thetaFiltered' * thetaFiltered);
+reg = (lambda / (2 * m)) * (thetaFiltered' * thetaFiltered);
 
-J = (1/m) * (costPositive - costNegative) + reg;
+J = (1 / m) * (costPositive - costNegative) + reg;
 
-grad = (1/m) * (X' * (h - y)) + ((lambda / m) * thetaFiltered);
+grad = (1 / m) * (X' * (h - y)) + ((lambda / m) * thetaFiltered);
 
 
 

@@ -27,7 +27,7 @@ increments = [ 0.01, 0.03, 0.1, 0.3, 1.0, 3.0, 10.0, 30.0];
 incrementC = increments;
 incrementSigma = increments;
 
-best = zeros(3,1);
+best = zeros(3, 1);
 trialNum = 1;
 for tryC = incrementC
 	for tryS = incrementSigma
